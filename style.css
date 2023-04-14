@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  /* text-decoration: none; */
+}
+
+:root {
+  /* ### Primary */
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+
+  --Very-paleblue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+}
+
+.container {
+  margin-top: 25%;
+  width: 350px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  border-radius: 20px;
+}
+
+.hero{
+    width: 100%;
+    height: 200px;
+    background-image: url(./images/illustration-hero.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+}
+
+.container h1{
+    text-align: center;
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+
+.container > p{
+    text-align: center;
+    font-size:0.9rem;
+    margin: 0 30px;
+    color: var(--Desaturated-blue);
+    font-weight: 400;
+    line-height: 1.5;
+    
+}
+
+.annual_plan{
+    background-color: var(--Very-paleblue);
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 10px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 5px;
+    place-items: center;
+}
+
+.annual_plan_pricing h3{
+   font-size: 0.8rem;
+   font-weight: 700;
+   color: var(--Dark-blue);
+   margin-bottom: 5px;
+}
+
+
+.annual_plan_pricing p{
+    font-size: 0.9rem;
+    color: var(--Desaturated-blue);
+ }
+
+.annual_plan a {
+    justify-self: self-end;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--Bright-blue);
+    cursor: pointer;
+}
+
+.annual_plan a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 70%);
+    
+}
+
+.btn{
+
+    width: 300px;
+    padding: 13px 0px;
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+
+    background-color: hsl(245, 75%, 70%); 
+}
+
+.cancel_order{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cancel_order:hover{
+   
+    color: var(--Dark-blue);
+    
+}
+
+
+
